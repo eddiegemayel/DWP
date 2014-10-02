@@ -4,7 +4,7 @@
 ####Spin Up Server
 1. Create new droplet on Digital Ocean
 2. Once powered up , SSH into server via terminal
-  * ssh root@104.131.81.98.
+  * ssh root@Ipaddress
 3. Change Password and create your admin user in the sudo group
   * adduser gemayel sudo 
 4. Re-login as newly created admin user
