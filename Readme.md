@@ -11,5 +11,9 @@
 5. Run commands to update your server
   * sudo apt-get update
   * sudo apt-get upgrade
-  * sudo apt-get update (one more time)
+  * sudo apt-get update
+
 ####Setup Apache
+1. Run command
+  * sudo apt-get install apache2
+####Setup Github
