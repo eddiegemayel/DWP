@@ -16,6 +16,10 @@
 ####Setup Apache
 1. Run command.
   * sudo apt-get install apache2
+2. Configure Server name so apache2 can restart successfully.
+  * sudo pico /etc/apache2/conf.d/security
+3. Restart Server.
+  * sudo service apache2 restart
 
 ####Setup Github
 1. Install git core.
