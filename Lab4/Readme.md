@@ -18,8 +18,29 @@
   * sudo apt-get install apache2
 2. Configure Server name so apache2 can restart successfully.
   * sudo pico /etc/apache2/conf.d/security
+  * ServerName staging
 3. Restart Server.
   * sudo service apache2 restart
+
+####Initializing git with hooks
+1. Make sure admin has permissions to alter directory, and remove default index file if you havn't already.
+  * sudo chown gemayel ./www/
+  * rm index.html
+2. Move to /var directory and create/enter a repo directory with admin permissions.
+  * cd /var
+  * sudo mkdir repos
+  * sudo chown gemayel repos
+  * cd repos/
+3. Make a '.git' folder in your repos directory, then head inside the directory.
+  * mkdir portfolioProduction.git
+  * cd portfolioProduction.git/
+4.
+
+
+
+
+
+
 
 ####Setup Github
 1. Install git core.
@@ -36,7 +57,7 @@
   * ssh git@github.com
   * Hi eddiegemayel! You've successfully authenticated, but GitHub does not provide shell access. Connection to github.com closed.
 
-####Initialze git
+####Initialize git
 1. First, change ownership of 'www' directory so we can put git repo into it.
   * sudo chown gemayel -R ../www/
 2. Delete old index.html file.
