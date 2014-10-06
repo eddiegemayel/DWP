@@ -49,7 +49,7 @@
 3. Next, initialize Git while in the www folder.
   * git init
 
-####Initializing git with hooks
+####Initializing hooks
 1. Make sure admin has permissions to alter directory, and remove default index file if you havn't already.
   * sudo chown gemayel ./www/
   * rm index.html
