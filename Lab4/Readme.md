@@ -27,7 +27,14 @@
   * ServerName staging
 3. Restart Server.
   * sudo service apache2 restart
-4. Setting up Apache for Handling Multiple Sites
+4. Restrict Access
+  * sudo pico /etc/apache2/conf.d/security
+  * Uncomment <Directory />
+  * Add
+  * Options FollowSymLinks
+  * sudo service apache2 restart
+
+5. Setting up Apache for Handling Multiple Sites
   * sudo pico /etc/apache2/sites-available/default
   * Change both occurrences of /var/www to /var/www/YourSite.com
   * sudo chown UserName /var/www
