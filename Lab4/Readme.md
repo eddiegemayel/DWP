@@ -12,6 +12,12 @@
   * sudo apt-get update
   * sudo apt-get upgrade
   * sudo apt-get update
+6. Update System level Packages.
+  * sudo aptitude update
+  * sudo aptitude safe-upgrade
+  * sudo reboot
+  
+
 
 ####Setup Apache
 1. Run command.
@@ -70,16 +76,3 @@
     * #!/bin/sh
     * GIT_WORK_TREE=/var/www git checkout -f
   * chmod +x post-receive
-
-
-
-
-
-
-
-
-####Pulling from git
-1. Create remote to get from Github repo.
-  * git remote add github git@github.com:eddiegemayel/DWP.git
-2. Pull from that repo to update the page.
-  * git pull github master
