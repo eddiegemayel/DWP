@@ -29,7 +29,7 @@
   * sudo service apache2 restart
 4. Restrict Access
   * sudo pico /etc/apache2/conf.d/security
-  * Uncomment <Directory />
+  * Uncomment " < Directory /> "
   * Add
   * Options FollowSymLinks
   * sudo service apache2 restart
