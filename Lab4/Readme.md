@@ -52,15 +52,6 @@
 
 
 
-
-####Initialize git
-1. First, change ownership of 'www' directory so we can put git repo into it.
-  * sudo chown gemayel -R ../www/
-2. Delete old index.html file.
-  * rm ./index.html
-3. Next, initialize Git while in the www folder.
-  * git init
-
 ####Initializing hooks
 1. Make sure admin has permissions to alter directory, and remove default index file if you havn't already.
   * sudo chown gemayel ./www/
