@@ -27,6 +27,12 @@
   * ServerName staging
 3. Restart Server.
   * sudo service apache2 restart
+4. Setting up Apache for Handling Multiple Sites
+  * sudo pico /etc/apache2/sites-available/default
+  *Change both occurrences of /var/www to /var/www/YourSite.com
+  * sudo chown UserName /var/www
+  * mkdir /var/www/YourSite.com
+
 
 
 ####Setup Github
