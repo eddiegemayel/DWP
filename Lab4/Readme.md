@@ -22,7 +22,7 @@
 3. Restart Server.
   * sudo service apache2 restart
 
-  
+
 ####Setup Github
 1. Install git core.
   * sudo apt-get install git-core
@@ -50,8 +50,15 @@
 3. Make a '.git' folder in your repos directory, then head inside the directory.
   * mkdir portfolioProduction.git
   * cd portfolioProduction.git/
-4. Formally initialize bare git
+4. Formally initialize bare git, and go into hooks directory
   * git init --bare
+  * cd hooks/
+5. Inside hooks, create executable file and change it's permissions so it can run succesfully
+  * pico post-receive
+  * Then type the following inside that file: 
+    * #!/bin/sh
+    * GIT_WORK_TREE=/var/www git checkout -f
+  * chmod +x post-receive
 
 
 
