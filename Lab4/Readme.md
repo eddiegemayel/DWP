@@ -80,6 +80,10 @@
     * #!/bin/sh
     * GIT_WORK_TREE=/var/www git checkout -f
   * chmod +x post-receive
+
+
+
+####To push to release
 6. Open new terminal window and navigate to projects folder to initialize
   * cd projects/
   * cd lab4/
@@ -91,7 +95,3 @@
 8. Add Remotes
   * git remote add productionServer ssh://gemayel@104.131.81.98/var/repos/portfolioProduction.git
   * git push productionServer master
-
-
-
-####To push to release
