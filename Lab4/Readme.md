@@ -32,6 +32,7 @@
   * Uncomment " < Directory /> "
   * Add
   * Options FollowSymLinks
+  * Delete Deny from all
   * sudo service apache2 restart
 
 5. Setting up Apache for Handling Multiple Sites
@@ -61,10 +62,9 @@
 
 ####Initializing hooks
 1. Make sure admin has permissions to alter directory, and remove default index file if you havn't already.
-  * sudo chown gemayel ./www/
+  * sudo chown gemayel var/www/html
   * rm index.html
-2. Move to /var directory and create/enter a repo directory with admin permissions.
-  * cd /var
+2. create/enter a repo directory in 'html/'' with admin permissions.
   * sudo mkdir repos
   * sudo chown gemayel repos
   * cd repos/
@@ -78,7 +78,7 @@
   * pico post-receive
   * Then type the following inside that file: 
     * #!/bin/sh
-    * GIT_WORK_TREE=/var/www git checkout -f
+    * GIT_WORK_TREE=/var/www/html git checkout -f
   * chmod +x post-receive
 
 
