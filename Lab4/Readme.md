@@ -6,6 +6,7 @@
 2. Once spun up , SSH into server(s) via terminal.
   * ssh root@Ipaddress
 3. Change Password and create your admin user in the sudo group.
+  * adduser gemayel
   * adduser gemayel sudo 
 4. Re-login as newly created admin user.
 5. Run commands to update your server(s).
@@ -28,7 +29,7 @@
 3. Restart Server.
   * sudo service apache2 restart
 4. Restrict Access
-  * sudo pico /etc/apache2/conf.d/security
+  * sudo pico /etc/apache2/conf.d/security (etc/apache2/sites-avaialbe/000-default.conf)
   * Uncomment " < Directory /> "
   * Add
   * Options FollowSymLinks
