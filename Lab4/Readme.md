@@ -92,5 +92,5 @@
   * git add -A
   * git commit -m 'testing commit'
 8. Add Remotes
-  * git remote add productionServer ssh://gemayel@104.131.81.98/var/repos/portfolioProduction.git
+  * git remote add productionServer ssh://gemayel@104.131.81.98/var/www/html/repos/portfolioProduction.git
   * git push productionServer master
