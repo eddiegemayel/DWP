@@ -24,7 +24,7 @@
 1. Run command.
   * sudo apt-get install apache2
 2. Configure Server name so apache2 can restart successfully.
-  * sudo pico /etc/apache2/conf.d/security (etc/apache2/sites-available/000-default.conf)
+  * sudo pico apache.conf, then scroll to the bottom.  older -->(/etc/apache2/conf.d/security) (etc/apache2/sites-available/000-default.conf)
   * ServerName staging
 3. Restart Server.
   * sudo service apache2 restart
