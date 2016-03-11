@@ -94,3 +94,16 @@
 8. Add Remotes
   * git remote add productionServer ssh://gemayel@104.131.81.98/var/www/html/repos/portfolioProduction.git
   * git push productionServer master
+
+####Install Postfix
+1. SSH into server on terminal and enter these commands
+  * sudo apt-get update
+  * sudo apt-get install postfix
+2. Then choose 'Internet Site'
+3. Enter your domain name
+4. Go into main.cf file to edit inet_interfaces
+  * sudo pico /etc/postfix/main.cf
+  * inet_interfaces = loopback-only or localhost
+5. Restart then done.
+  * sudo service postfix restart
+  * sudo service apache2 restart
